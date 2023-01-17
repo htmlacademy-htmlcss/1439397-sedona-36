@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Андрей Власов](https://up.htmlacademy.ru/htmlcss/36/user/1439397).
-* Наставник: `Неизвестно`.
+- Студент: [Андрей Власов](https://up.htmlacademy.ru/htmlcss/36/user/1439397).
+- Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k)
 
 ---
 
