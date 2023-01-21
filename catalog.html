@@ -44,25 +44,21 @@
 
     <!-- Основное содержимое -->
     <main class="main-inner">
+      <h1 class="main-inner-title">Каталог гостиниц с фильтрами</h1>
 
-      <!-- Хедер основного содержимого -->
-      <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-          <ul class="breadcrumbs">
-            <li class="breadcrumbs">
-              <a class="breadcrumbs-item" href="index.html">
-                <span class="visually-hidden">Главная страница</span>
-              </a>
-            </li>
-            <li class="breadcrumbs">
-              <a class="breadcrumbs-item">Гостиницы</a>
-            </li>
-          </ul>
-      </header>
-
-      <!-- Каталог продуктов с фильтрами -->
+      <!-- Каталог гостиниц с фильтрами -->
       <section class="catalog-products">
-        <h2 class="visually-hidden">Список фильтров с товарами</h2>
+        <h2 class="visually-hidden">Гостиницы Седоны</h2>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs">
+            <a class="breadcrumbs-item" href="index.html">
+              <span class="visually-hidden">Главная страница</span>
+            </a>
+          </li>
+          <li class="breadcrumbs">
+            <a class="breadcrumbs-item">Гостиницы</a>
+          </li>
+        </ul>
 
         <!-- Фильтры -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -71,19 +67,19 @@
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="swimming-pool" checked>
+                  <input class="control-input" type="checkbox" name="pg" value="swimming-pool" checked>
                   Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
+                  <input class="control-input" type="checkbox" name="pg" value="parking" checked>
                   Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi">
+                  <input class="control-input" type="checkbox" name="pg" value="wi-fi">
                   Wi-Fi
                 </label>
               </li>
@@ -149,15 +145,15 @@
           <option value="popular">Сначала популярные</option>
         </select>
 
-        <a class="button button-border" href="#">
+        <button class="button-card-type button-border" type="button">
           <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+        <button class="button-card-type" type="button">
           <span class="visually-hidden">На весь экран</span>
-        </a>
-        <a class="button" href="#">
+        </button>
+        <button class="button-card-type" type="button">
           <span class="visually-hidden">Показать список</span>
-        </a>
+        </button>
 
         <!-- Список карточек -->
         <ul class="product-list">
@@ -170,7 +166,7 @@
             <span class="product-card-price">От 4000 ₽</span>
             <p class="product-card-row">
               <a class="button" href="#">Подробнее</a>
-              <button class="button">В избранное</button>
+              <button class="button" type="button">В избранное</button>
             </p>
             <span class="product-card-raiting">Рейтинг: 8,5</span>
           </li>
@@ -183,7 +179,7 @@
             <span class="product-card-price">От 5000 ₽</span>
             <p class="product-card-row">
               <a class="button" href="#">Подробнее</a>
-              <button class="button">В избранное</button>
+              <button class="button" type="button">В избранное</button>
             </p>
             <span class="product-card-raiting">Рейтинг: 9,2</span>
           </li>
@@ -196,7 +192,7 @@
             <span class="product-card-price">От 2500 ₽</span>
             <p class="product-card-row">
               <a class="button" href="#">Подробнее</a>
-              <button class="button">В избранное</button>
+              <button class="button" type="button">В избранное</button>
             </p>
             <span class="product-card-raiting">Рейтинг: 6,9</span>
           </li>
@@ -209,7 +205,7 @@
             <span class="product-card-price">От 1500 ₽</span>
             <p class="product-card-row">
               <a class="button" href="#">Подробнее</a>
-              <button class="button">В избранное</button>
+              <button class="button" type="button">В избранное</button>
             </p>
             <span class="product-card-raiting">Рейтинг: 5,0</span>
           </li>
@@ -217,7 +213,7 @@
       </section>
 
       <!-- Пагинация -->
-      <ul class="pagination">
+      <ol class="pagination">
         <li class="pagination-item">
           <a class="pagination-link pagination-link-current">1</a>
         </li>
@@ -236,7 +232,7 @@
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
-      </ul>
+      </ol>
     </main>
 
      <!-- Подвал  -->
@@ -267,11 +263,11 @@
       <!-- Контакты  -->
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <address class="footer-contacts-address">
-          <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </address>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
 
       <!-- Логотип HTML-Academy -->
-      <img class="page-footer-logo" src="" alt="Логотип HTML-Academy">
+      <a class="footer-link">
+        <img class="footer-logo" src="" alt="Логотип HTML-Academy">
+      </a>
     </footer>
