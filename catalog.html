@@ -145,15 +145,23 @@
           <option value="popular">Сначала популярные</option>
         </select>
 
-        <button class="button-card-type button-border" type="button">
-          <span class="visually-hidden">Показать карточки</span>
-        </button>
-        <button class="button-card-type" type="button">
-          <span class="visually-hidden">На весь экран</span>
-        </button>
-        <button class="button-card-type" type="button">
-          <span class="visually-hidden">Показать список</span>
-        </button>
+        <ul class="product-card-type">
+          <li class="product-card-item">
+            <button class="button-card-type button-card-type-active" type="button">
+              <span class="visually-hidden">Показать карточки</span>
+            </button>
+          </li>
+          <li class="product-card-item">
+            <button class="button-card-type" type="button">
+              <span class="visually-hidden">На весь экран</span>
+            </button>
+          </li>
+          <li class="product-card-item">
+            <button class="button-card-type" type="button">
+              <span class="visually-hidden">Показать список</span>
+            </button>
+          </li>
+        </ul>
 
         <!-- Список карточек -->
         <ul class="product-list">
