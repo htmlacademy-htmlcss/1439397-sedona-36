@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Каталог</title>
   </head>
   <body>
@@ -33,6 +33,7 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
+              <span class="favourite-icon-text">12</span>
             </a>
           </li>
           <li class="navigation-item">
@@ -44,11 +45,10 @@
 
     <!-- Основное содержимое -->
     <main class="main-inner">
-      <h1 class="main-inner-title">Каталог гостиниц с фильтрами</h1>
 
       <!-- Каталог гостиниц с фильтрами -->
       <section class="catalog-products">
-        <h2 class="visually-hidden">Гостиницы Седоны</h2>
+        <h1 class="catalog-products-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs">
             <a class="breadcrumbs-item" href="index.html">
@@ -138,7 +138,7 @@
         </form>
 
         <!-- Сортировка и вид карточек -->
-        <h3 class="catalog-products-subtitle">Найдено гостиниц: 38</h3>
+        <span class="catalog-products-subtitle">Найдено гостиниц: 38</span>
         <select class="select-contol" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -168,7 +168,7 @@
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="" alt="">
-              <h4 class="product-card-title">Amara Resort & Spa</h4>
+              <h2 class="product-card-title">Amara Resort & Spa</h2>
             </a>
             <span class="type-of-appartments">Гостиница</span>
             <span class="product-card-price">От 4000 ₽</span>
@@ -181,20 +181,20 @@
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="" alt="">
-              <h4 class="product-card-title">Villas at Poco Diablo</h4>
+              <h2 class="product-card-title">Villas at Poco Diablo</h2>
             </a>
             <span class="type-of-appartments">Гостиница</span>
             <span class="product-card-price">От 5000 ₽</span>
             <p class="product-card-row">
               <a class="button" href="#">Подробнее</a>
-              <button class="button" type="button">В избранное</button>
+              <button class="button button-product-card-active" type="button">В избранном</button>
             </p>
             <span class="product-card-raiting">Рейтинг: 9,2</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="" alt="">
-              <h4 class="product-card-title">Desert Quail Inn</h4>
+              <h2 class="product-card-title">Desert Quail Inn</h2>
             </a>
             <span class="type-of-appartments">Гостиница</span>
             <span class="product-card-price">От 2500 ₽</span>
@@ -207,7 +207,7 @@
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="" alt="">
-              <h4 class="product-card-title">GreenTree Inn</h4>
+              <h2 class="product-card-title">GreenTree Inn</h2>
             </a>
             <span class="type-of-appartments">Гостиница</span>
             <span class="product-card-price">От 1500 ₽</span>
