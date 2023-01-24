@@ -7,7 +7,7 @@
   <body>
 
     <!-- Хэдер -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a>
           <img class="page-header-logo" src="" alt="Логотип сайта Седона.">
@@ -44,10 +44,10 @@
     </header>
 
     <!-- Основное содержимое -->
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
 
       <!-- Каталог гостиниц с фильтрами -->
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="filter">
         <h1 class="catalog-products-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs">
@@ -164,7 +164,7 @@
         </ul>
 
         <!-- Список карточек -->
-        <ul class="product-list">
+        <ul class="product-list" data-test="catalog">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="" alt="">
@@ -218,33 +218,44 @@
             <span class="product-card-raiting">Рейтинг: 5,0</span>
           </li>
         </ul>
+
+        <!-- Пагинация -->
+        <ol class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-link-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+        </ol>
       </section>
 
-      <!-- Пагинация -->
-      <ol class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-link-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-      </ol>
+      <!-- Блок подписки -->
+      <section class="newsletter newsletter-catalog" data-test="subscribe">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Email</label>
+          <input type="password" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
+          <button class="button" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
 
      <!-- Подвал  -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
 
       <!-- Социальные сети -->
       <section class="footer-social">
