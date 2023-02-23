@@ -22,16 +22,16 @@
             <a class="navigation-link navigation-link-current">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О седоне</a>
+            <a class="navigation-link" href="#">О Cедоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-user-item">
-            <a class="navigation-user-link navigation-link-current" href="#">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
@@ -42,7 +42,7 @@
             </a>
           </li>
           <li class="navigation-user-item">
-            <a class="navigation-user-link button button-navigation" href="#">Хочу сюда</a>
+            <a class="navigation-user-link button button-navigation" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -64,7 +64,7 @@
           <li class="advantages-item advantages-item-white-font advantages-item-divider">
             <h3 class="advantages-subtitle">Настоящий<br>
               городок</h3>
-            <p class="advantages-desc">Седона — не аттракцион для<br>
+            <p class="advantages-desc advantages-desc-white-font">Седона — не аттракцион для<br>
               туристов, там течёт своя<br>
               жизнь</p>
             <img class="advantages-picture" src="images/advantages-photo-1.jpg" width="800" height="384"
@@ -91,7 +91,7 @@
           <li class="advantages-item advantages-item-white-font advantages-item-divider">
             <h3 class="advantages-subtitle">Там есть<br>
               мост дьявола</h3>
-            <p class="advantages-desc">Да, по нему можно пройти!<br>
+            <p class="advantages-desc advantages-desc-white-font">Да, по нему можно пройти!<br>
               Если вы осмелитесь,<br>
               разумеется</p>
             <img class="advantages-picture" src="images/advantages-photo-2.jpg" width="800" height="385"
@@ -105,17 +105,17 @@
         <h2 class="advantages-title">Приезжайте в Седону отдохнуть <br>в комфорте и уюте!</h2>
         <p class="advantages-text">Опытный персонал и качественное обслуживание!</p>
         <ul class="advantages-list">
-          <li class="advantages-item advantages-item-dark-blue advantages-item-icon">
+          <li class="advantages-item advantages-item-light-blue advantages-item-icon">
             <h3 class="advantages-subtitle">Жильё</h3>
             <p class="advantages-desc">Рекомендуем пожить<br> в настоящем мотеле,<br>
               всё как в кино!</p>
           </li>
-          <li class="advantages-item advantages-item-light-blue advantages-item-icon">
+          <li class="advantages-item advantages-item-icon">
             <h3 class="advantages-subtitle">Еда</h3>
             <p class="advantages-desc">Всегда заказывайте<br>
               топовый фирменный бургер,<br> вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item advantages-item-dark-blue advantages-item-icon">
+          <li class="advantages-item advantages-item-light-blue advantages-item-icon">
             <h3 class="advantages-subtitle">Сувениры</h3>
             <p class="advantages-desc">Не только китайского,<br>
               но и настоящего местного<br> производства!</p>
@@ -125,21 +125,22 @@
 
       <!-- Блок поиска = -->
       <section class="search">
-        <h2 class="visually-hidden">Поиск гостиницы в седоне</h2>
-        <b>Заинтересовались?</b>
+        <h2 class="search-title">Заинтересовались?</h2>
         <p class="search-text">Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="button button-search" href="catalog.html">Поиск гостиницы в седоне</a>
       </section>
 
       <!-- Блок подписки -->
-      <section class="newsletter">
+      <section class="newsletter newsletter-main-index">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletter-email">Email</label>
-          <input type="password" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
-          <button class="button" type="submit">Подписаться</button>
+          <p class="newsletter-row">
+            <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
+            <button class="button" type="submit">Подписаться</button>
+          </p>
         </form>
       </section>
     </main>
