@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 36px;
+
+  font-family: "PT Sans", serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background-color: #756157;
+  border-radius: 4px;
+  border: none;
+  text-decoration: none;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
+
+/* Хедер главной */
+.navigation-list,
+.navigation-user,
+.advantages-list {
+  list-style-type: none;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: inherit;
+
+  text-decoration: none;
+}
+
+.navigation-user-link-favourite {
+  text-decoration: none;
+}
+
+.favourite-icon-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+
+  font-size: 10px;
+  line-height: 10px;
+  color: #ffffff;
+
+  background-color: #7DB54F;
+  border-radius: 10px;
+}
+
+/* Основное содержание главной */
+.hero {
+  background-color: #ffffff;
+  background-image: url("../images/flag.svg"),
+                    url("../images/index-background.jpg");
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.advantages-title,
+.search-title,
+.newsletter-title,
+.catalog-products-subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-text,
+.search-text,
+.newsletter-text,
+.newsletter-catalog .newsletter-text {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.newsletter-main-index .newsletter-title,
+.newsletter-main-index .newsletter-text {
+  color: #ffffff;
+}
+
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-desc {
+  color: #333333;
+}
+
+.advantages-item-white-font {
+  color: #ffffff;
+  background-color: #82B3D3;
+}
+
+.advantages-desc-white-font {
+  color: inherit;
+}
+
+.advantages-item-light-blue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-dark-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.newsletter-main-index {
+  background-color: #82B3D3;
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.newsletter-form input {
+  width: 452px;
+  height: 52px;
+  font-family: "PT Sans", serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+  border: none;
+}
+
+.newsletter-form button {
+  width: 232px;
+  height: 52px;
+  background-color: #82B3D3;
+  border-radius: 0 4px 4px 0;
+}
+
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.button-search {
+  width: 376px;
+  height: 52px;
+}
+
+/* Каталог */
+
+.filter-wrapper {
+  color: #ffffff;
+  background-color: #82B3D3;
+  background-image: url("../images/filters-background.jpg");
+  background-repeat: no-repeat;
+}
+
+.catalog-products-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.catalog-filter {
+  display: flex;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control {
+  line-height: 23px;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.range input,
+.range label {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.range input {
+  width: 143px;
+  height: 48px;
+  font-family: "PT Sans", serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.button-catalog-filter-submit,
+.button-catalog-filter-reset {
+  width: 191px;
+  height: 36px;
+}
+
+.button-catalog-filter-submit {
+  background-color: #82B3D3;
+}
+
+.button-catalog-filter-reset {
+  background-color: rgba(0,0,0,0);
+}
+
+.select-contol {
+  font-family: "PT Sans", serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.product-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.product-card {
+  list-style-type: none;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.product-card .button {
+  width: 140px;
+  height: 36px;
+}
+
+.product-card button {
+  background-color: #82B3D3;
+}
+
+.product-card-raiting {
+  font-weight: 400;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+
+.pagination {
+  display: flex;
+  list-style-type: none;
+}
+
+.pagination-link {
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
+
+  font-size: 20px;
+  line-height: 36px;
+
+  background-color: #82B3D3;
+}
+
+.pagination-link-current {
+  color: inherit;
+  background-color: #F2F2F2;
+}
+
+.pagination-link-dots {
+font-size: 22px;
+line-height: 26px;
+color: #000000;
+
+background-color: rgba(0,0,0,0);
+}
