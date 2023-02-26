@@ -11,7 +11,7 @@
   <body>
 
     <!-- Хэдер -->
-    <header class="page-header">
+    <header class="page-header" data-test="header">
       <nav class="navigation">
         <a>
           <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70"
@@ -49,10 +49,10 @@
     </header>
 
     <!-- Основное содержимое -->
-    <main class="main-inner">
+    <main class="main-inner" data-test="main">
 
       <!-- Каталог гостиниц с фильтрами -->
-      <section class="catalog-products">
+      <section class="catalog-products" data-test="filter">
         <div class="filter-wrapper">
           <h1 class="catalog-products-title">Гостиницы Седоны</h1>
           <ol class="breadcrumbs">
@@ -171,7 +171,7 @@
         </ul>
 
         <!-- Список карточек -->
-        <ul class="product-list">
+        <ul class="product-list" data-test="catalog">
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/hotel-1.jpg" width="300" height="212" alt="">
@@ -250,7 +250,7 @@
       </section>
 
       <!-- Блок подписки -->
-      <section class="newsletter">
+      <section class="newsletter" data-test="subscribe">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -264,7 +264,7 @@
     </main>
 
     <!-- Подвал  -->
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
 
       <!-- Социальные сети -->
       <section class="footer-social">

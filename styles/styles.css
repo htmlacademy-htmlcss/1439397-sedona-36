@@ -130,25 +130,31 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-desc {
-  color: #333333;
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-white-font {
+.advantages-item-picture {
   color: #ffffff;
   background-color: #82B3D3;
 }
 
-.advantages-desc-white-font {
-  color: inherit;
-}
-
-.advantages-item-light-blue {
-  background-color: rgba(131, 179, 211, 0.12);
-}
-
-.advantages-item-dark-blue {
+.advantages-item-road,
+.advantages-item-housing,
+.advantages-item-souveniers {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-food {
+  background-color: #ffffff;
+}
+
+.advantages-item-picture .advantages-desc {
+  color: #ffffff;
+}
+
+.advantages-desc {
+  color: #333333;
 }
 
 .newsletter-main-index {
