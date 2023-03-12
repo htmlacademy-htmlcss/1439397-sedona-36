@@ -75,7 +75,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Гостиницы</a>
+                <a class="breadcrumbs-link breadcrumbs-link-current">Гостиницы</a>
               </li>
             </ol>
 
@@ -86,43 +86,53 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="features-group" value="swimming-pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="features-group"
+                        value="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="features-group" value="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="features-group" value="parking"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="features-group" value="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="features-group" value="wi-fi">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
               <fieldset class="catalog-filter-group catalog-filter-group-accomodation">
-                <legend class="catalog-filter-title">Тип жилья:</legend>
+                <legend class="catalog-filter-title">Тип Жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="hotel"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="motel">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="appartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="product-group"
+                        value="appartments">
+                      <span class="control-mark"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -132,15 +142,17 @@
                 <div class="range">
                   <div class="range-wrapper-inputs">
                     <label class="catalog-filter-label">
-                      от <input class="range-input" type="number" value="0" name="min-price"> ₽
+                      <input class="range-input range-input-left" type="number" value="0" name="min-price"
+                        placeholder="0"><span class="from">от</span>
                     </label>
                     <label class="catalog-filter-label">
-                      до <input class="range-input" type="number" value="9000" name="max-price"> ₽
+                      <input class="range-input range-input-right" type="number" value="9000" name="max-price"
+                        placeholder="999999"><span class="to">до</span>
                     </label>
                   </div>
 
                   <div class="range-scale">
-                    <div class="range-bar">
+                    <div class="range-bar" style="left: 0; width: 226px">
                       <button class="range-toggle toggle-min" type="button">
                         <span class="visually-hidden">Изменить минимальную цену</span>
                       </button>
@@ -173,7 +185,8 @@
                 <li class="product-card-item">
                   <button class="button button-card-type button-card-type-active" type="button">
                     <span class="visually-hidden">Показать карточки</span>
-                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"
                         fill="#000" />
                     </svg>
@@ -182,7 +195,8 @@
                 <li class="product-card-item">
                   <button class="button button-card-type" type="button">
                     <span class="visually-hidden">На весь экран</span>
-                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z" fill="#000" />
                     </svg>
                   </button>
@@ -190,7 +204,8 @@
                 <li class="product-card-item">
                   <button class="button button-card-type" type="button">
                     <span class="visually-hidden">Показать список</span>
-                    <svg width="16" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" focusable="false" width="16" height="14" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path
                         d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"
                         fill="#000" />
@@ -319,7 +334,8 @@
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="newsletter-email">Email</label>
             <p class="newsletter-row">
-              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required>
+              <input class="newsletter-email" type="email" id="newsletter-email" name="newsletter-email"
+                placeholder="Ваш e-mail" required>
               <button class="button button-newsletter" type="submit">Подписаться</button>
             </p>
           </form>
