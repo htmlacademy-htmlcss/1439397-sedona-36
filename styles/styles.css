@@ -1402,6 +1402,8 @@ input::-webkit-inner-spin-button {
   background-image: url("../images/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: right 18px center;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .select-contol:focus {
